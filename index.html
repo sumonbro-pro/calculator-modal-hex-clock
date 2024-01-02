@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 tools for writers.</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-center p-2">
+
+        <div id="fNumContainer" class="grid gap-2 justify-center border border-cyan-300 px-2 py-5">
+            <div class="flex justify-center items-center gap-1">
+                <button class="bg-cyan-300 px-2 py-1 rounded font-black cursor-pointer hover:bg-cyan-600 text-white"
+                    id="fNumMinus">&minus;</button>
+
+
+                <input id="fNum" class="border border-cyan-300 p-1 rounded w-full" placeholder="First Number" value="0">
+
+                <button class="bg-cyan-300 px-2 py-1 rounded font-black cursor-pointer hover:bg-cyan-600 text-white"
+                    id="fNumPlus">&plus;</button>
+            </div>
+
+
+            <div class="flex justify-center items-center gap-1">
+                <button class="bg-cyan-300 px-2 py-1 rounded font-black cursor-pointer hover:bg-cyan-600 text-white"
+                    id="lNumMinus">&minus;</button>
+
+                <input id="lNum" class="border border-cyan-300 p-1 rounded w-full" placeholder="Last Number"
+                    type="number" value="0">
+
+                <button class="bg-cyan-300 px-2 py-1 rounded font-black cursor-pointer hover:bg-cyan-600 text-white"
+                    id="lNumPlus">&plus;</button>
+            </div>
+
+
+            <button id="add" class="bg-cyan-500 text-white rounded hover:bg-cyan-600">Add</button>
+
+            <button id="minus" class="bg-cyan-500 text-white rounded hover:bg-cyan-600">Minus</button>
+
+            <button id="multiply" class="bg-cyan-500 text-white rounded hover:bg-cyan-600">Multiply</button>
+
+            <button id="divide" class="bg-cyan-500 text-white rounded hover:bg-cyan-600">Divide</button>
+
+            <textarea class="p-2 border border-cyan-300 rounded" name="msg" id="counterMsg"
+                placeholder="Result will be shown here."></textarea>
+        </div>
+
+        <div class="">
+            <div id="hamburgerContainer" class="mx-auto flex items-center justify-center">
+                <span id="hamburger" class="border text-cyan-500 text-xl px-2 cursor-pointer">☰</span>
+            </div>
+
+            <div class="container hidden w-100 h-100 border border-cyan-300 p-2" id="modalContainer">
+                <div id="modalHead">
+                    <span class="bg-red-500 rounded-xl px-1 text-white shadow cursor-pointer"
+                        id="closeBtn">&cross;</span>
+                    <h3 class="text-cyan-500 font-bold text-3xl border-b p-3 text-center">This is the title</h3>
+                </div>
+                <div class="container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, veniam soluta! Quia vel, sunt,
+                    cupiditate expedita id assumenda tempore, eligendi excepturi minima suscipit sapiente aspernatur.
+                </div>
+            </div>
+        </div>
+        <!-- HEX GENERATOR  -->
+        <div id="hexGenerator" class="flex flex-col justify-center h-48 items-center">
+            <p id="hexContainer" class="px-5 mb-3 rounded py-2 border border-cyan-300 text-black bg-white">#FFFFFF</p>
+            <button class="bg-cyan-500 rounded text-white py-2 px-4 hover:bg-cyan-600" id="hexClick">Generate</button>
+        </div>
+
+        <!-- CLOCK STARTS  -->
+        <div id="clockContainer" class="flex flex-row justify-center items-center">
+            <span class="text-5xl px-2 shadow-inner shadow-inner-xl shadow-black bg-slate-200" id="hour">--</span>
+            <span class="text-5xl px-2 shadow-inner shadow-inner-xl shadow-black bg-slate-200 mx-2">:</span>
+            <span class="text-5xl px-2 shadow-inner shadow-inner-xl shadow-black bg-slate-200" id="minute">--</span>
+            <span class="text-5xl px-2 shadow-inner shadow-inner-xl shadow-black bg-slate-200 mx-2">:</span>
+            <span class="text-5xl px-2 shadow-inner shadow-inner-xl shadow-black bg-slate-200" id="second">--</span>
+            <span class="text-5xl px-2 shadow-inner shadow-inner-xl shadow-black bg-slate-200 mx-2">-</span>
+            <span class="text-5xl px-2 shadow-inner shadow-inner-xl shadow-black bg-slate-200" id="ampm">--</span>
+        </div>
+        <div />
+        <script src="./js/app.js"></script>
+</body>
+
+</html>

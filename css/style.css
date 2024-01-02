@@ -1,0 +1,7 @@
+#fNum::-webkit-outer-spin-button,#fNum::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#fNum[type="number"] {
+  -moz-appearance: textfield;
+}
